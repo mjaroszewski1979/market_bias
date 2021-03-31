@@ -1,0 +1,16 @@
+{% extends 'base_min.html' %}
+{% block title %} Success {% endblock %}
+
+{% block content %}
+<div class="showcase" id="top">
+      <div class="main">
+        <div class="sub_error">
+          <h4><div class="info"><i class="fas fa-info-circle"></i> <i class="fas fa-info-circle fa-2x"></i> <i class="fas fa-info-circle"></i></div>Thank you {{ name }}! Your free ebook has been sent to {{ email }}.</h4>
+        </div>
+        <hr>
+        <div class="sub_error">
+          <h4><a href="{{ url_for('index')}}"><strong id="strong">Please go back to the homepage.</strong></a></h4>
+        </div>
+      </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,66 @@
+{% extends 'base_min.html' %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+  <div class="showcase">
+    <div class="main" id="top">
+      <h2><i class="fas fa-globe"></i> The Big Picture - Macro Perspective on the Capital Markets <i class="fas fa-globe"></i></h2>
+    </div>
+    <div class="main">
+        <div class="sub">
+        <h4><div class="info"><i class="fas fa-info-circle"></i> <i class="fas fa-info-circle fa-2x"></i> <i class="fas fa-info-circle"></i></div>The <strong>S&P 500 Index</strong>, or the Standard & Poor's 500 Index, is a market-capitalization-weighted index of the 500 largest publicly-traded companies in the U.S. 
+          It is not an exact list of the top 500 U.S. companies by market capitalization because there are other criteria to be included in the index. 
+          The index is widely regarded as the best gauge of large-cap U.S. equities. The market capitalization of a company is calculated by taking the current stock price and multiplying it by the outstanding shares. 
+          The S&P only uses free-floating shares, meaning the shares that the public can trade. The S&P adjusts each company's market cap to compensate for new share issues or company mergers. 
+          The value of the index is calculated by totaling the adjusted market caps of each company and dividing the result by a divisor. The S&P 500 is one of the most widely quoted American indexes because it represents the largest publicly traded corporations in the U.S. 
+          The S&P 500 focuses on the U.S. market's large-cap sector and is also a float-weighted index, meaning company market capitalizations are adjusted by the number of shares available for public trading.</h4>
+          <iframe width="500" height="400" frameborder="0" scrolling="no" src="//plotly.com/~mjaroszewski/9.embed"></iframe>
+      </div>
+    </div>
+    <div class="market">
+      <p>From an investment perspective, trend filtering is fundamental to improve performance and limit portfolio risks.</p>
+      {% if adx > 25 %}
+        <h3><i class="fas fa-map-signs"></i> Trend Filter: <a class='indi' href="{{ url_for('about') }}">Average Directional Movement Index</a> Trading Signal: <strong>Strong Trend</strong> <i class="fas fa-chart-line"></i></i></h3>
+        <hr>
+      {% else %}
+        <h3><i class="fas fa-map-signs"></i> Trend Filter: <a class='indi-down' href="{{ url_for('about') }}">Average Directional Movement Index</a> Trading Signal: <strong>Weak Trend</strong> <i class="fas fa-chart-line"></i></i></h3>
+        <hr>
+      {% endif %}
+    </div>
+
+    <div class="market">
+      <p>Trend indicators analyze whether a market is moving up, down, or sideways over time.</p>
+      {% for i in num_i %}
+        {% if val_i[i] > res_i[i] %}
+        <h3><i class="fas fa-hand-holding-usd"></i> Trend Indicator: <a class='indi' href="{{ url_for('about') }}#indicators">{{ id_i[i] }}</a> Trading Signal: <strong>Buy</strong> <i class="fas fa-arrow-circle-up"></i></h3>
+        <hr>
+        {% else %}
+        <h3><i class="far fa-thumbs-down"></i> Trend Indicator: <a class='indi-down' href="{{ url_for('about') }}#indicators">{{ id_i[i] }}</a> Trading Signal: <strong>Sell</strong> <i class="fas fa-arrow-circle-down"></i></h3>
+        <hr>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="market">
+      <p>Candlesticks are graphical representations of price movements for a given period of time.</p>
+      {% for i in num_p %}
+        {% if res_p[i] > 0 %}
+        <h3><i class="fas fa-hand-holding-usd"></i> Candlestick Pattern: <a class='indi' href="{{ url_for('about') }}#patterns">{{ id_p[i] }}</a> Trading Signal: <strong>Buy</strong> <i class="fas fa-arrow-circle-up"></i></h3>
+        <hr>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="market__osc">
+      <p>An oscillator is a technical analysis tool that constructs high and low bands between two extreme values.</p>
+      {% for i in num_o %}
+        {% if res_o[i] > val_o[i] %}
+        <h3><i class="fas fa-hand-holding-usd"></i> Oscilator: <a class='indi' href="{{ url_for('about') }}#oscillators">{{ id_o[i] }}</a> Trading Signal: <strong>Buy</strong> <i class="fas fa-arrow-circle-up"></i></h3>
+        <hr>
+        {% else %}
+        <h3><i class="far fa-thumbs-down"></i> Oscilator: <a class='indi-down' href="{{ url_for('about') }}#oscillators">{{ id_o[i] }}</a> Trading Signal: <strong>Sell</strong> <i class="fas fa-arrow-circle-down"></i></h3>
+        <hr>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+{% endblock content %}

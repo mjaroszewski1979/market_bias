@@ -1,0 +1,37 @@
+{% extends 'base_min.html' %}
+{% block title %} Contact {% endblock %}
+
+{% block content %}
+
+<div class="showcase">
+    <div class="main" id="top">
+        <h2><i class="fas fa-globe"></i> The Ultimate Guide to Financial Markets <i class="fas fa-globe"></i></h2>
+      </div>
+      <div class="main">
+          <div class="sub">
+          <h4><div class="info"><i class="fas fa-info-circle"></i> <i class="fas fa-info-circle fa-2x"></i> <i class="fas fa-info-circle"></i></div><strong><p>
+            Stock Market</strong> is a place where shares of pubic listed companies are traded. The primary market is where companies float shares to the general public in an initial public offering (IPO) to raise capital. 
+            Once new securities have been sold in the primary market, they are traded in the secondary market—where one investor buys shares from another investor at the prevailing market price or at whatever price both the buyer and seller agree upon.
+          </p>
+            <p><strong>Bond Market</strong> - often called the debt market, fixed-income market, or credit market—is the collective name given to all trades and issues of debt securities. Governments typically issue bonds in order to raise capital to pay down debts or fund infrastructural improvements. 
+                Publicly-traded companies issue bonds when they need to finance business expansion projects or maintain ongoing operations. The general bond market can be segmented into the following bond classifications, each with its own set of attributes: 
+                Government Bonds, Municipal Bonds, Mortgage-Backed Bonds and Emerging Market Bonds...</p></h4>
+            <div class="form">
+                <h2> <i class="far fa-check-circle"></i> Free Ebook</h2>
+                <form action="{{ url_for('success') }}", method='POST'>
+                    <div class="form__control">
+                        <input type="text" name="name" placeholder="Please Enter Your Name" required>
+                    </div>
+                    <div class="form__control">
+                        <input type="email" name="email" placeholder="Please Enter Your Email" required>
+                    </div>
+                    <div class="form__control">
+                        <input type="submit" value="Get Access" class="button">
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+</div>
+
+{% endblock content %}
