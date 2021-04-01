@@ -23,5 +23,41 @@
    * Relative Strength Index
    * Stochastic
    * Williams' %R
+
 * Chart Patterns Filters:
+   * 'Abandoned Baby
+   * Belt-hold
+   * Breakaway
+   * Closing Marubozu
+   * Concealing Baby Swallow
+   * Counterattack
+   * Dragonfly Doji
+   * Engulfing Pattern
+   * Up-gap Side-by-Side White Lines
+   * Hammer
    * Harami
+   * Harami Cross
+   * Hikkake
+   * Homing Pigeon
+   * Kicking
+   * Ladder Bottom
+   * Long Line
+   * Marubozu
+   * Matching Low
+   * Mat Hold
+   * Morning Doji Star
+   * Morning Star
+   * Piercing
+   * Rising Three Methods
+   * Separating Lines
+   * Stick Sandwich
+   * Takuri
+   * Tasuki Gap
+   * Three Inside Up
+   * Three-Line Strike
+   * Three Stars In The South
+   * Three Advancing White Soldiers
+   * Three Outside Up/Down
+   * Tristar
+   * Unique 3 River
+   * Upside Gap Three Methods
