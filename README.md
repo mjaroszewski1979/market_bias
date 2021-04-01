@@ -1,6 +1,6 @@
 # Market Bias
 
-### This is a Python/Flask application powered by Pandas and Plotly. It is designed to download historical data of S&P 500 from Yahoo Finance using Pandas Datareader. By utilizing Technical Analysis Library it applies: 
+### This is a Python/Flask application powered by Pandas and Plotly. It is designed to download historical data of S&P 500 from Yahoo Finance API using Pandas Datareader. By utilizing Technical Analysis Library it applies: 
 
 * Trading indicators: 
    * Bollinger Bands
@@ -61,3 +61,5 @@
    * Tristar
    * Unique 3 River
    * Upside Gap Three Methods
+
+### Market Bias is providing interactive visualizations with Plotly. There is also an example of simple and profitable trading strategy - Dual Momentum. This section of website contains a table of various stock indices grouped by the one year rate of change, again using historical data downloaded from Yahoo Finance API and updated daily.
