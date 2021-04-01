@@ -66,6 +66,8 @@
 
 #### Application is using Python/Smtplib to hadle data from the contact form and will be able to send Free Ebook ind PDF format to email address provided by the user.
 
+----------------------------------------------------------------
+
 ![caption](https://github.com/mjaroszewski1979/market_bias/blob/main/marketbias.gif) 
 
   Live | Code | Technologies
