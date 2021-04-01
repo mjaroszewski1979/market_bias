@@ -28,7 +28,7 @@
    * Williams' %R
 
 * Chart Patterns Filters:
-   * 'Abandoned Baby
+   * Abandoned Baby
    * Belt-hold
    * Breakaway
    * Closing Marubozu
