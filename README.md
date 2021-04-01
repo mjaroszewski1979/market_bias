@@ -67,7 +67,7 @@
 
 #### Market Bias is providing interactive visualizations with Plotly. There is also an example of simple and profitable trading strategy - Dual Momentum. This section of website contains a table of various stock indices grouped by the one year rate of change, again using historical data downloaded from Yahoo Finance API and updated daily.
 
-#### Application is using Python/Smtplib to hadle data from the contact form and will be able to send Free Ebook ind PDF format to email address provided by the user.
+#### Application is using Python/Smtplib to hadle data from the contact form and will be able to send Free Ebook in PDF format to email address provided by the user.
 
 ----------------------------------------------------------------
 
