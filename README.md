@@ -1,4 +1,4 @@
-# Market Bias
+## <img src="https://github.com/mjaroszewski1979/mjaroszewski1979/blob/main/tablet.png">  &nbsp; Market Bias
 
 #### This is a Python/Flask application powered by Pandas and Plotly. It is designed to download historical data of S&P 500 from Yahoo Finance API using Pandas Datareader and applies Technical Analysis Library tools like: 
 
