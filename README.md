@@ -1,6 +1,6 @@
 # Market Bias
 
-### This is a Python/Flask application powered by Pandas and Plotly. It is designed to download historical data of S&P 500 from Yahoo Finance API using Pandas Datareader. By utilizing Technical Analysis Library it applies: 
+#### This is a Python/Flask application powered by Pandas and Plotly. It is designed to download historical data of S&P 500 from Yahoo Finance API using Pandas Datareader. By utilizing Technical Analysis Library it applies: 
 
 * Trading indicators: 
    * Bollinger Bands
@@ -62,4 +62,12 @@
    * Unique 3 River
    * Upside Gap Three Methods
 
-### Market Bias is providing interactive visualizations with Plotly. There is also an example of simple and profitable trading strategy - Dual Momentum. This section of website contains a table of various stock indices grouped by the one year rate of change, again using historical data downloaded from Yahoo Finance API and updated daily.
+#### Market Bias is providing interactive visualizations with Plotly. There is also an example of simple and profitable trading strategy - Dual Momentum. This section of website contains a table of various stock indices grouped by the one year rate of change, again using historical data downloaded from Yahoo Finance API and updated daily.
+
+#### Application is using Python/Smtplib to hadle data from the contact form and will be able to send Free Ebook ind PDF format to email address provided by the user.
+
+![caption](https://github.com/mjaroszewski1979/market_bias/blob/main/marketbias.gif) 
+
+  Live | Code | Technologies
+  ---- | ---- | ------------
+  [<img src="https://github.com/mjaroszewski1979/mjaroszewski1979/blob/main/pyan1.png">](http://mjaroszewski.pythonanywhere.com/) | [<img src="https://github.com/mjaroszewski1979/mjaroszewski1979/blob/main/github1.png">](https://github.com/mjaroszewski1979/market_bias) | <img src="https://github.com/mjaroszewski1979/mjaroszewski1979/blob/main/python1.png"> &nbsp; <img src="https://github.com/mjaroszewski1979/mjaroszewski1979/blob/main/flask.png"> &nbsp; &nbsp; <img src="https://github.com/mjaroszewski1979/mjaroszewski1979/blob/main/pandas.png"> &nbsp;   &nbsp; <img src="https://github.com/mjaroszewski1979/mjaroszewski1979/blob/main/plotly.png"> &nbsp;  <img src="https://github.com/mjaroszewski1979/mjaroszewski1979/blob/main/html1.png"> <img src="https://github.com/mjaroszewski1979/mjaroszewski1979/blob/main/css1.png">
